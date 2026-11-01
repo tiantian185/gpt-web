@@ -7,7 +7,7 @@
 | 网站 | 自定义域名 | Cloudflare Pages 项目 | 源码目录 |
 | --- | --- | --- | --- |
 | 李苛人格侧写 | https://personality.179652341.xyz | [li-ke-profile-site](https://li-ke-profile-site.pages.dev) | `serious/` |
-| 你是哪种傻逼？256 型鉴定局 | https://like.179652341.xyz | [li-ke-roast-site](https://li-ke-roast-site.pages.dev) | `roast/` |
+| 你是什么类型的傻逼李苛？256 型鉴定局 | https://like.179652341.xyz | [li-ke-roast-site](https://li-ke-roast-site.pages.dev) | `roast/` |
 
 这两个项目均关联 `tiantian185/gpt-web` 的 `main` 分支。Cloudflare Pages 每次检测到仓库更新会自动执行静态部署，不再使用单独的 Cloudflare Worker 进行网页托管。
 

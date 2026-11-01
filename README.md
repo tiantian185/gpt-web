@@ -1,16 +1,27 @@
 # 李苛测试研究所
 
-两个独立的娱乐互动测试网站：
+本仓库包含两个独立的、纯静态 HTML 娱乐测试网站，由 GitHub 管理源码，Cloudflare Pages 自动构建部署。
 
-- [人格侧写](https://personality.179652341.xyz)
-- [整蛊测试](https://roast.179652341.xyz)
+## 线上网址
 
-## 网站文件
+| 网站 | 自定义域名 | Cloudflare Pages 项目 | 源码目录 |
+| --- | --- | --- | --- |
+| 李苛人格侧写 | https://personality.179652341.xyz | [li-ke-profile-site](https://li-ke-profile-site.pages.dev) | `serious/` |
+| 李苛傻逼鉴定局 | https://roast.179652341.xyz | [li-ke-roast-site](https://li-ke-roast-site.pages.dev) | `roast/` |
 
-- `index.html`：两个测试的导航首页
-- `serious/index.html`：人格侧写测试
-- `roast/index.html`：整蛊测试
+这两个项目均关联 `tiantian185/gpt-web` 的 `main` 分支。Cloudflare Pages 每次检测到仓库更新会自动执行静态部署，不再使用单独的 Cloudflare Worker 进行网页托管。
 
-这是纯静态前端项目，可直接通过 GitHub Pages 发布。当前 Cloudflare Workers 上的线上版本独立运行，GitHub 更新不会自动发布到 Workers。
+## 目录结构
 
-测试结果仅供娱乐，不属于临床诊断或经过验证的心理测评。整蛊内容仅供熟人间友善玩笑。
+- `index.html`：两个测试的仓库导航首页
+- `serious/index.html`：24 道人格行为问卷、四维分数、结果卡片及分享功能
+- `roast/index.html`：24 道荒诞整蛊题、四种离谱指数、10 个“傻逼李苛”结果
+- `README.md`：部署说明
+
+## 修改和发布
+
+1. 在 GitHub 修改 `serious/index.html` 或 `roast/index.html`，提交到 `main`。
+2. Cloudflare Pages 的两个项目会从此仓库自动构建。
+3. 源站 `*.pages.dev` 可供部署检查；两个自定义子域名 CNAME 分别指向其 Pages 域名。
+
+人格问卷为娱乐用途，未经过临床、心理测量学验证。整蛊版中的辱骂和“鉴定”均为夸张的虚构笑话，请勿用于恶意骚扰或对现实人物作事实评价。

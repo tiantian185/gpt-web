@@ -40,7 +40,7 @@ function scrollToTop(){window.scrollTo({top:0,behavior:'smooth'});}
 function shell(main){
  app.innerHTML=`<div class="site-shell"><header class="site-header">
  <a class="wordmark" href="/" aria-label="返回测试首页"><span class="brand-symbol">L<span class="brand-dot">.</span></span><span>${escapeHTML(config.brand)}</span></a>
- <nav aria-label="页面导航"><span class="nav-tag">${escapeHTML(config.nav)}</span><a class="nav-link" href="${mode==='serious'?'https://roast.179652341.xyz/':'https://personality.179652341.xyz/'}">${mode==='serious'?'去傻逼鉴定':'去人格侧写'} <span aria-hidden="true">↗</span></a></nav></header>
+ <nav aria-label="页面导航"><span class="nav-tag">${escapeHTML(config.nav)}</span><a class="nav-link" href="${mode==='serious'?'https://like.179652341.xyz/':'https://personality.179652341.xyz/'}">${mode==='serious'?'去傻逼鉴定':'去人格侧写'} <span aria-hidden="true">↗</span></a></nav></header>
  <main id="main-content">${main}</main><footer class="footer"><span>© LIKÉ PLAYGROUND / 2026</span><span>${mode==='serious'?'观察自己，不急着定义自己。':'纯属整蛊，笑完翻篇，别拿来伤人。'}</span></footer></div>`;
 }
 function showToast(str){
